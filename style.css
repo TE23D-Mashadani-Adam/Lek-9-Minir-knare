@@ -1,0 +1,35 @@
+
+.calculator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.calculator_btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+#num1{
+    text-align: center;
+}
+#num2{
+    text-align: center;
+}
+
+#answer{
+    text-align: center;
+}
+.uträkning{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border: black 5px solid;
+}

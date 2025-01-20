@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Lek 9 Miniräknare</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="number" id="num1" />
+      <div class="calculator_btns">
+        <button type="button" class="plus" onclick="Plus()">+</button>
+        <button type="button" class="minus" onclick="Minus()">-</button>
+        <button type="button" class="multiplication" onclick="Multi()">
+          X
+        </button>
+        <button type="button" class="divide" onclick="Divide()">/</button>
+      </div>
+      <input type="number" id="num2" />
+      <p>=</p>
+      <input type="text" id="answer" />
+    </div>
+
+    <div class="uträkning"></div>
+  </body>
+</html>
