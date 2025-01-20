@@ -11,62 +11,75 @@ let n2;
 
 let answer = 0;
 
-function Plus()
-{
-   n1= parseInt(num1.value);
-   n2= parseInt(num2.value);
+function Plus() {
+   n1 = parseInt(num1.value);
+   n2 = parseInt(num2.value);
 
    answer = n1 + n2;
-   answer_element.value = answer;
 
-   uträkning_div.innerHTML = "";
-   let h2 = document.createElement("h2");
-   h2.textContent = num1.value + " + " + num2.value + " = " + answer;
-   console.log(h2.value);
-   uträkning_div.appendChild(h2);
+   if ((n1 >= 0 || n1 <= 0) && (n2 >= 0 || n2 <= 0)) {
+      answer_element.value = answer;
+
+      uträkning_div.innerHTML = "";
+      let h2 = document.createElement("h2");
+      h2.textContent = num1.value + " + " + num2.value + " = " + answer;
+      console.log(h2.value);
+      uträkning_div.appendChild(h2);
+   } else {
+      alert("Bruh");
+   }
 }
-function Minus()
-{
-   n1= parseInt(num1.value);
-   n2= parseInt(num2.value);
+function Minus() {
+   n1 = parseInt(num1.value);
+   n2 = parseInt(num2.value);
    answer = n1 - n2;
-   answer_element.value = answer;
-
-   uträkning_div.innerHTML = "";
-   let h2 = document.createElement("h2");
-   h2.textContent = num1.value + " - " + num2.value + " = " + answer;
-   console.log(h2.value);
-   uträkning_div.appendChild(h2);
+   
+   if ((n1 >= 0 || n1 <= 0) && (n2 >= 0 || n2 <= 0)) {
+      answer_element.value = answer;
+      uträkning_div.innerHTML = "";
+      let h2 = document.createElement("h2");
+      h2.textContent = num1.value + " - " + num2.value + " = " + answer;
+      console.log(h2.value);
+      uträkning_div.appendChild(h2);
+   }else {
+      alert("Bruh");
+   }
 
 }
-function Multi()
-{
-   n1= parseInt(num1.value);
-   n2= parseInt(num2.value);
+function Multi() {
+   n1 = parseInt(num1.value);
+   n2 = parseInt(num2.value);
 
    answer = n1 * n2;
-   answer_element.value = answer;
-
-   uträkning_div.innerHTML = "";
-   let h2 = document.createElement("h2");
-   h2.textContent = num1.value + " X " + num2.value + " = " + answer;
-   console.log(h2.value);
-   uträkning_div.appendChild(h2);
+   
+   if ((n1 >= 0 || n1 <= 0) && (n2 >= 0 || n2 <= 0)) {
+      answer_element.value = answer;
+      uträkning_div.innerHTML = "";
+      let h2 = document.createElement("h2");
+      h2.textContent = num1.value + " X " + num2.value + " = " + answer;
+      console.log(h2.value);
+      uträkning_div.appendChild(h2);
+   }else {
+      alert("Bruh");
+   }
 
 }
-function Divide()
-{
-   n1= parseInt(num1.value);
-   n2= parseInt(num2.value);
+function Divide() {
+   n1 = parseInt(num1.value);
+   n2 = parseInt(num2.value);
 
    answer = n1 / n2;
-   answer_element.value = answer;
-
-   uträkning_div.innerHTML = "";
-   let h2 = document.createElement("h2");
-   h2.textContent = num1.value + " / " + num2.value + " = " + answer;
-   console.log(h2.value);
-   uträkning_div.appendChild(h2);
+   
+   if ((n1 >= 0 || n1 <= 0) && (n2 >= 0 || n2 <= 0)) {
+      answer_element.value = answer;
+      uträkning_div.innerHTML = "";
+      let h2 = document.createElement("h2");
+      h2.textContent = num1.value + " / " + num2.value + " = " + answer;
+      console.log(h2.value);
+      uträkning_div.appendChild(h2);
+   }else {
+      alert("Bruh");
+   }
 
 }
 
